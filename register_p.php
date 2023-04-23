@@ -14,9 +14,10 @@ while ($row = $result->fetch_assoc() or $numRows==0) {
     echo "2012"   ;
         // Access individual columns in the row
         if($username != $row["username"] && $email != $row["email"]){
-            $sql2 = "INSERT INTO users (username,password,email) VALUES ('$username',$pwd,'$email')";
+            $sql2 = "INSERT INTO users (username, password, email) VALUES ('$username', '$pwd', '$email')";
             if ($conn->query($sql2) === TRUE) {
                 echo "New record created successfully";
+                header("Location: index.php");
             } else {
                 echo "Error: " . $sql2 . "<br>" . $conn->error;
             }
