@@ -3,7 +3,7 @@ session_start();
 include("connection.php");
 
 // File upload directory
-$uploadDir = "upload_img/";
+$uploadDir = "upload_img";
 
 // Get the uploaded file details
 $closer_name = $_POST["c_name"];

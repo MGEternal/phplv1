@@ -2,7 +2,7 @@
 // Database configuration
 $host = "localhost"; // replace with your database host
 $username = "root"; // replace with your database username
-$password = "12345678"; // replace with your database password
+$password = "wGUVrw5owabYEu"; // replace with your database password
 $dbname = "closet"; // replace with your database name
 
 // Create a database connection
